@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <center><a href="https://xain7093.github.io/312/">回到首頁</a></h4></center>
+        <style>
+            th{
+                background-color: black;
+                color: white;
+            }
+            td{
+                padding: 5px;
+            }
+         
+            span{
+                display: inline-block;
+                text-align: right;
+                width: 15px;
+            }
+        </style>
+        <body>
+                <script>
+                    document.write("<center>")
+                    document.write("<table border=1>")
+                    document.write("<th colspan=4>九九乘法表</th><br>")
+                    document.write("<tr>")
+                    for(var i = 1;i<4;i++){
+                        document.write("<td>")
+                        for(var o = 1;o<10;o++){
+                            document.write('&nbsp' + i + " × " + o + "=<span>" + (i*o) + "</span> "+ "<br>" )
+                            console.log("-",o);
+                        }
+                        document.write("</td>")
+                    }
+                    document.write("</tr>")
+                    document.write("<tr>")
+                    for(var i = 4;i<7;i++){
+                        document.write("<td>")
+                        for(var o = 1;o<10;o++){
+                            document.write( '&nbsp'+ i + " × " + o + " = <span>" + (i*o) + "</span> "+ "<br>")
+                            console.log("-",o);
+                        }
+                        document.write("</td>")
+                    }
+                    document.write("</tr>")
+                    document.write("<tr>")
+                    for(var i = 7;i<10;i++){
+                        document.write("<td>")
+                        for(var o = 1;o<10;o++){
+                            document.write( '&nbsp'+i + " × " + o + " = <span>" + (i*o) + "</span> "+ "<br>")
+                            console.log("-",o);
+                        }
+                        document.write("</td>")
+                    }
+                    document.write("</tr>")
+                    document.write("</table>")
+                    document.write("</center>")
+                </script>
+        </body>
+    </head>
+</html>
